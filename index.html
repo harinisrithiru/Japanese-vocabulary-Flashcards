@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japanese Vocabulary Flashcards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app-container">
+        <section id="welcome-section" class="welcome-panel">
+            <h1>Welcome to Japanese Vocabulary Learning!</h1>
+            <p>こんにちは！ Let's learn some useful Japanese vocabulary together.</p>
+            <button id="start-learning-btn" class="btn primary-btn">Start Learning</button>
+        </section>
+
+        <section id="learning-section" class="flashcard hidden-section">
+            <p id="progress-text" class="progress">Word 1 of 15</p>
+            <h2 id="japanese-word" class="japanese-word">こんにちは</h2>
+            <p id="category-text" class="category">Greetings</p>
+
+            <div class="info-row">
+                <span class="label">Hiragana</span>
+                <p id="hiragana-text" class="info-text">こんにちは</p>
+            </div>
+
+            <div class="info-row hidden-info">
+                <span class="label">Romaji</span>
+                <p id="romaji-text" class="info-text">konnichiwa</p>
+            </div>
+
+            <div class="info-row hidden-info">
+                <span class="label">Meaning</span>
+                <p id="meaning-text" class="info-text">hello / good afternoon</p>
+            </div>
+
+            <div class="button-group">
+                <button id="previous-word-btn" class="btn secondary-btn">Previous Word</button>
+                <button id="show-meaning-btn" class="btn primary-btn">Show Meaning</button>
+                <button id="next-word-btn" class="btn secondary-btn">Next Word</button>
+            </div>
+
+            <button id="start-quiz-btn" class="btn quiz-btn hidden-section">Start Quiz</button>
+            <p id="status-text" class="status">Tap show meaning to reveal the pronunciation and English meaning.</p>
+        </section>
+
+        <section id="quiz-section" class="quiz-panel hidden-section">
+            <div id="quiz-header">
+                <h2>Vocabulary Quiz</h2>
+                <p id="quiz-score" class="quiz-score">Score: 0 / 5</p>
+            </div>
+
+            <div id="quiz-question-box" class="quiz-question-box"></div>
+            <div id="quiz-feedback" class="quiz-feedback"></div>
+            <div class="button-group quiz-buttons">
+                <button id="next-question-btn" class="btn primary-btn hidden-section">Next Question</button>
+                <button id="try-again-btn" class="btn secondary-btn hidden-section">Try Again</button>
+                <button id="back-to-welcome-btn" class="btn secondary-btn hidden-section">Back to Welcome Page</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
